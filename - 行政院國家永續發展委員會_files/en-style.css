@@ -49,18 +49,6 @@ h5.banner_txt {
     padding: 10px
 }
 
-@media screen and (max-width: 941px) {
-    .carousel-item {
-        min-height: 20rem;
-    }
-    h5.banner_txt {
-        display: none;
-    }
-    h2.banner_txt {
-        font-size: 1.1rem
-    }
-}
-
 
 /*英文版調版*/
 
@@ -163,11 +151,12 @@ table.dataTable td a:not([href]):not([tabindex]) {
 .AnnualReportimg .width1340 {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .AnnualReportimg a {
     width: calc(100% / 3 - 50px);
-    margin: 50px 50px;
+    margin: 50px 25px;
 }
 
 .AnnualReportimg a img {
@@ -201,4 +190,20 @@ table.dataTable td a:not([href]):not([tabindex]) {
     position: absolute;
     right: 0;
     top: 10%;
+}
+
+@media screen and (max-width: 941px) {
+    .carousel-item {
+        min-height: 20rem;
+    }
+    h5.banner_txt {
+        display: none;
+    }
+    h2.banner_txt {
+        font-size: 1.1rem
+    }
+    .AnnualReportimg a {
+        width: calc(100% - 50px);
+        margin: 50px 50px;
+    }
 }
